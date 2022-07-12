@@ -1,3 +1,3 @@
 # Bill_Generator_Backend
 
-Server Address : https://shop-billing-software.herokuapp.com/totalData
+Server Address API : https://shop-billing-software.herokuapp.com/totalData

@@ -7,5 +7,23 @@
     "mysql": "^2.18.1",
     "nodemailer": "^6.7.4",
     "pdf-creator-node": "^2.3.4"
-  }
+  },
+  "name": "bill_generator_backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanheensethi/Bill_Generator_Backend.git"
+  },
+  "author": "Sanheen Sethi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanheensethi/Bill_Generator_Backend/issues"
+  },
+  "homepage": "https://github.com/sanheensethi/Bill_Generator_Backend#readme",
+  "description": ""
 }

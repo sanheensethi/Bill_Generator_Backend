@@ -232,6 +232,6 @@ app.get('/totalData',(req,res)=>{
 	});
 })
 
-PORT = process.env.port || 5000
+PORT = process.env.port || 80
 const server = app.listen(PORT);
 server.keepAliveTimeout = 61 * 1000;

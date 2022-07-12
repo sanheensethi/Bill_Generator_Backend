@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <style>
+      body{
+        font-size:20px;
+      }
+      .center{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+      }
+      th,td{
+        padding-right:100px;
+      }
+    </style>
+    <title>Login Page</title>
+  </head>
+  <body>
+    <center><h1><b>ShopWay</b></h1></center>
+    <center><h3>Address: xyz, Main Market , XYZ. PinCode-123456</h3></center>
+    <br>
+    <div>
+      <div>
+        <div><b>Bill Number:</b> <b> {{bill_id}}</b></div>
+        <div><b>Customer Name:</b> {{customer_name}}</div>
+        <div><b>Mobile Name:</b> {{mobile_number}}</div>
+        <div><b>Date Time:</b> {{date_time}}</div>
+      </div>
+      <br><hr>
+      <table>
+        <thead>
+          <th>Items</th>
+          <th>Quantity</th>
+          <th>Price/item</th>
+          <th>Amount</th>
+        </thead>
+        <tbody>
+          {{#each items}}
+          <tr>
+            <td>{{this.item}}</td>
+            <td>{{this.quantity}}</td>
+            <td>{{this.price}}</td>
+            <td>{{this.amount}}</td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+      <br><br>
+      <div>
+        <b>CGST: {{cgst}}</b>
+        <br><br>
+        <b>SGST: {{sgst}}</b>
+        <br><br>
+        <b>Total: {{total}}</b>
+      </div>
+
+    </div>    
+  </body>
+</html>
